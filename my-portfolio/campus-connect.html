@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Connect | Project Details</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fff5f8;
+            color: #442238;
+        }
+
+        header {
+            background: #8e245b;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 24px;
+        }
+
+        .back-link {
+            color: #8e245b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .intro {
+            background: white;
+            padding: 28px;
+            border-radius: 16px;
+            margin-top: 24px;
+        }
+
+        h2 {
+            color: #8e245b;
+        }
+        
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.feature-card {
+    background: #fff5f8;
+    border: 1px solid #f3c5d8;
+    border-radius: 12px;
+    padding: 18px;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.feature-card h3 {
+    color: #8e245b;
+    font-size: 16px;
+}
+
+.feature-card p {
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(120, 35, 85, 0.12);
+}
+
+@media (max-width: 600px) {
+    .features {
+        grid-template-columns: 1fr;
+    }
+}
+
+.project-overview {
+    margin-bottom: 32px;
+    padding: 24px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #fff0f6, #f3e5f5);
+    border-left: 5px solid #8e245b;
+}
+
+.overview-label {
+    color: #8e245b;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.project-overview h2 {
+    margin: 12px 0;
+    font-size: clamp(22px, 4vw, 30px);
+}
+
+.project-overview p {
+    line-height: 1.8;
+}
+
+.overview-status {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 7px 12px;
+    border-radius: 20px;
+    background: #fce4ec;
+    color: #8e245b;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#backToTop {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    width: 46px;
+    height: 46px;
+    border: none;
+    border-radius: 50%;
+    background: #8e245b;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(120, 35, 85, 0.2);
+    transition: background 0.3s ease,
+                transform 0.3s ease;
+}
+
+#backToTop:hover {
+    background: #b83280;
+    transform: translateY(-3px);
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Campus Connect</h1>
+        <p>Campus life, made easier.</p>
+    </header>
+
+    <main>
+        <a href="index.html" class="back-link">
+            &larr; Back to Portfolio
+        </a>
+
+        <section class="intro">
+            
+<div class="project-overview">
+    <span class="overview-label">PROJECT OVERVIEW</span>
+    <h2>Making Student Life Simpler</h2>
+    <p>
+        Campus Connect is a website concept focused on helping
+        university students stay organized, manage their academic
+        responsibilities, and keep up with campus life.
+    </p>
+    <span class="overview-status">● Concept Project</span>
+</div>
+
+            <h2>About the Project</h2>
+            <p>
+                Campus Connect is a student-focused website concept
+                designed to help university students organize their
+                class schedules, track assignment deadlines, and
+                stay updated with important campus announcements.
+            </p>
+
+<h2>Key Features</h2>
+
+<div class="features">
+    <article class="feature-card">
+        <h3>📅 Class Schedules</h3>
+        <p>Keep class times and daily activities organized in one place.</p>
+    </article>
+
+    <article class="feature-card">
+        <h3>📝 Assignment Tracking</h3>
+        <p>Keep track of assignment deadlines and upcoming coursework.</p>
+    </article>
+
+    <article class="feature-card">
+        <h3>📢 Campus Updates</h3>
+        <p>Make important campus announcements easier to find.</p>
+    </article>
+</div>
+
+            <h2>Technologies Used</h2>
+            <p>HTML, CSS, and JavaScript</p>
+        </section>
+    </main>
+
+<button id="backToTop" aria-label="Back to top" title="Back to top">
+    ↑
+</button>
+
+<script>
+    const backToTop = document.getElementById("backToTop");
+
+    backToTop.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+</script>
+
+</body>
+</html>
